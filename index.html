@@ -10,12 +10,19 @@
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/index.js">
  
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
     <script src="js/html5shiv.js"></script>
     <script src="js/html5element.js"></script>
 <![endif]-->
+
+<!-- Função Para Aparecer mensagem enviada com sucesso após enviar mensagem em contate-nos, está função está no botão em contatenos-->
+<script type="text/javascript">
+  function insereTexto()
+  {document.getElementById('divTeste').innerHTML = 'Sua mensagem foi enviada com sucesso!';}
+</script>
  
 </head>
 <body>
@@ -439,13 +446,49 @@
             <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li> 
           </ul>
         </div>
+
         <div class="col-lg-8 wow fadeInLeft delay-06s">
-          <div class="form" action="https://formsquash.io/f/MeoMJW8Lxzac9BefOiu1" method="POST">
+         <!--
+          
+          <div class="form" action="https://formsquash.io/f/MeoMJW8Lxzac9BefOiu1" method="POST">          
       
             <input class="input-text" type="text" name="" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <input class="input-text" type="text" name="" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+            <input class="input-text" type="email" name="" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
             <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
             <input class="input-btn" type="submit" value="send message">
+
+            <input type="hidden" name="_gotcha"></input>
+          <input class="input-btn" type="submit" value="enviar" />
+
+          -->
+
+          <!--function Contato() {
+            return ( -->
+              <section className="contato" id="Contatos">
+                <div className="container">
+                  <form action="https://formsquash.io/f/MeoMJW8Lxzac9BefOiu1" method="POST">
+                    <input class="input-text" type="email" name="email"  value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" />
+                    <input class="input-text" type="text" name="firstName" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" />
+                    <textarea class="input-text text-area"  name="mensagem" id="mensagem" type="mensagem" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
+          
+          
+                    </textarea>
+                    
+          
+                    <input class="input-btn" type="hidden" name="_gotcha"></input>
+                    <input class="input-btn" type="submit" value="enviar" onclick='insereTexto()' />
+
+                    <!-- <input type='button' onclick='insereTexto()' value='Inserir texto'/><br/> -->
+                    <div class="msgenvsucesso" id="divTeste"> </div>
+
+                  </form>
+          
+                </div>
+              </section>
+         <!--  )
+          
+          } -->
+
           </div>
         </div>
       </div>
