@@ -255,7 +255,7 @@ p {
 }
 
 .top_left_cont h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #000;
     line-height: 52px;
     margin: 0 0 26px 0;
@@ -265,7 +265,8 @@ p {
 
 .top_left_cont h2 strong {
     font-weight: 700;
-	color:#EFB21D;
+	color:#721515;
+    /*color:#EFB21D;*/
 }
 
 .top_left_cont p {
